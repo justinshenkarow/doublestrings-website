@@ -110,14 +110,8 @@
       opacity: 0.5;
       pointer-events: none;
     }
-    .hero-line {
-      position: absolute;
-      top: 0; bottom: 0;
-      left: 58%;
-      width: 1px;
-      background: linear-gradient(to bottom, transparent 0%, rgba(201,168,76,0.2) 30%, rgba(201,168,76,0.08) 70%, transparent 100%);
-    }
-    .hero-content { position: relative; z-index: 2; max-width: 800px; }
+    .hero-line { display: none; }
+    .hero-content { position: relative; z-index: 2; max-width: 1100px; }
     .hero-eyebrow {
       font-family: 'Cormorant Garamond', serif;
       font-size: 12px;
@@ -153,7 +147,7 @@
       font-weight: 300;
       line-height: 1.7;
       color: var(--off);
-      max-width: 480px;
+      max-width: 640px;
       opacity: 0;
       animation: fadeUp 1s ease 0.75s forwards;
     }
@@ -584,7 +578,7 @@
     <div class="hero-content">
       <p class="hero-eyebrow">Film &amp; Television Production</p>
       <h1 class="hero-title">
-        Double<br>Strings
+        Double Strings
 
       </h1>
       <p class="hero-sub">Developing bold, story-driven projects for television and film. Grounded in character. Built for impact.</p>
@@ -741,7 +735,7 @@
       <div class="contact-grid">
         <div class="contact-item reveal reveal-delay-1">
           <p class="contact-item-label">General Inquiries</p>
-          <p class="contact-item-value"><a href="mailto:justin@doublestrings.com">justin@doublestrings.com</a></p>
+          <p class="contact-item-value"><a href="/cdn-cgi/l/email-protection#503a252324393e10343f25323c35232422393e37237e333f3d"><span class="__cf_email__" data-cfemail="c2a8b7b1b6abac82a6adb7a0aea7b1b6b0abaca5b1eca1adaf">[email&#160;protected]</span></a></p>
           <p class="contact-item-sub">Development, partnerships &amp; production</p>
         </div>
         <div class="contact-item reveal reveal-delay-2">
@@ -759,7 +753,7 @@
     <p class="footer-copy">© 2026 Double Strings. All rights reserved.</p>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Custom cursor
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
@@ -775,10 +769,4 @@
 
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
-</body>
-</html>
+    cons
